@@ -21,13 +21,13 @@ namespace Toolkit;
 public record Dice
 {
     /// <summary>How many dice are rolled.  The 2 in "2d6+3".</summary>
-    public int Count { get; set; } = 1;
+    public int Count { get; init; } = 3;
 
     /// <summary>How many sides each die has.  The 6 in "2d6+3".</summary>
-    public int Sides { get; set; } = 6;
+    public int Sides { get; init; } = 6;
 
     /// <summary>A flat amount added to the total after rolling.  The +3 in "2d6+3".</summary>
-    public int Modifier { get; set; } = 0;
+    public int Modifier { get; init; } = 1;
 
     /// <summary>
     /// Roll the dice.  Sums Count rolls of a Sides-sided die, then adds Modifier.

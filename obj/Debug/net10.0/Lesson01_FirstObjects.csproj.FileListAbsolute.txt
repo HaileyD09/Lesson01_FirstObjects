@@ -1,0 +1,15 @@
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/bin/Debug/net10.0/Lesson01_FirstObjects
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/bin/Debug/net10.0/Lesson01_FirstObjects.deps.json
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/bin/Debug/net10.0/Lesson01_FirstObjects.runtimeconfig.json
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/bin/Debug/net10.0/Lesson01_FirstObjects.dll
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/bin/Debug/net10.0/Lesson01_FirstObjects.pdb
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/Lesson01_FirstObjects.GeneratedMSBuildEditorConfig.editorconfig
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/Lesson01_FirstObjects.AssemblyInfoInputs.cache
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/Lesson01_FirstObjects.AssemblyInfo.cs
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/Lesson01_FirstObjects.csproj.CoreCompileInputs.cache
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/Lesson01_FirstObjects.sourcelink.json
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/Lesson01_FirstObjects.dll
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/refint/Lesson01_FirstObjects.dll
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/Lesson01_FirstObjects.pdb
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/Lesson01_FirstObjects.genruntimeconfig.cache
+/Users/haileyduan/Robotics/Lesson01_FirstObjects/obj/Debug/net10.0/ref/Lesson01_FirstObjects.dll
