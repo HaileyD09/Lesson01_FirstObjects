@@ -128,3 +128,15 @@ static void Section(string title)
     Console.WriteLine();
     Console.WriteLine($"── {title} {new string('─', Math.Max(0, 68 - title.Length))}");
 }
+
+
+//Cards 9/10
+
+InitialCards(rng);
+
+static void InitialCards(Random rng)
+{
+    var newCard = new Card { Number = 5, Suit = "hearts"};
+    Console.WriteLine($"These cards are: {newCard}");
+    
+}
