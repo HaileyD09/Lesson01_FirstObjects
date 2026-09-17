@@ -136,7 +136,20 @@ InitialCards(rng);
 
 static void InitialCards(Random rng)
 {
-    var newCard = new Card { Number = 5, Suit = "hearts"};
-    Console.WriteLine($"These cards are: {newCard}");
+    Card myCard = Card.Of(8, Suit.Hearts);
+    Console.WriteLine($"These cards are: {myCard}");
     
+    try { Card.Of(-12, new Suit("square", "green")); }
+    catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
+    try {  Card.Of(20, new("circle", "blue")); }
+    catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
+    try {  Card.Of(0, new("rectangle", "pink")); }
+    catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
+    try { Card.Of(-10000000, new("star", "cyan")); }
+    catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
+    try { Card.Of(999, new("pencil", "rainbow")); }
+    catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
+    
+    var deck = Card.FullDeck();
+    Console.WriteLine(deck.Count);
 }
