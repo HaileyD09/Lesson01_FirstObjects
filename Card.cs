@@ -9,12 +9,20 @@ namespace Toolkit;
 
 
 
-public record Suit(string Name = "Clubs", string Color = "Black")
+public record Suit(string Name = "♠", ConsoleColor Color = ConsoleColor.Black)
 {
-    public static Suit Clubs => new Suit("Clubs", "Black");
-    public static Suit Hearts => new Suit("Hearts", "Red");
-    public static Suit Diamonds => new Suit("Diamonds", "Red");
-    public static Suit Spades => new Suit("Spades", "Black");
+    public static Suit Clubs => new Suit("♣", ConsoleColor.Black);
+    public static Suit Hearts => new Suit("♥", ConsoleColor.Red);
+    public static Suit Diamonds => new Suit("♦", ConsoleColor.Red);
+    public static Suit Spades => new Suit("♠", ConsoleColor.Black);
+    
+}
+
+public record Value(string Label = "A", int GameValue = 1)
+{
+    public override string ToString() => $"{Label}";
+    public static readonly Value Ace = new();
+    public static implicit operator int(Value v) => v.GameValue;
 }
 
 public record Card
@@ -31,7 +39,7 @@ public record Card
     }
 
     //hw 9/17
-    public static Card Of(int value, Suit suit, bool isFaceUp = true)
+    public static Card Of(Value value, Suit suit, bool isFaceUp = true)
     {
         if (value < 1 || value > 14)
             throw new ArgumentOutOfRangeException(
@@ -46,6 +54,16 @@ public record Card
 
     }
     
+    //public override string ToString() => $"{Value}{Suit}";
+    public override string ToString()
+    {
+        Console.ForegroundColor = this.Suit.Color;
+        return $"{Value}{Suit}";
+        
+        //TODO: THIS IS WRONG FIX IT
+    }
+   
+    /*
     public static List<Card> FullDeck()
     {
         Suit[] suits = [Suit.Clubs, Suit.Hearts, Suit.Diamonds, Suit.Spades];
@@ -63,7 +81,7 @@ public record Card
         return deck;
     }
     
-    
+    */
 
 }
 

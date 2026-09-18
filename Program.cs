@@ -136,20 +136,20 @@ InitialCards(rng);
 
 static void InitialCards(Random rng)
 {
-    Card myCard = Card.Of(8, Suit.Hearts);
+    Card myCard = Card.Of(Value.Ace, Suit.Hearts);
     Console.WriteLine($"These cards are: {myCard}");
     
-    try { Card.Of(-12, new Suit("square", "green")); }
+    try { Card.Of(new Value("20", 20), new Suit("square", ConsoleColor.Green)); }
     catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
-    try {  Card.Of(20, new("circle", "blue")); }
+    try {  Card.Of(new Value("-100", -100), new Suit("circle", ConsoleColor.Blue)); }
     catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
-    try {  Card.Of(0, new("rectangle", "pink")); }
+    try {  Card.Of(new Value("0", 0), new Suit("rectangle", ConsoleColor.Magenta)); }
     catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
-    try { Card.Of(-10000000, new("star", "cyan")); }
+    try { Card.Of(new Value("40", 40), new Suit("star", ConsoleColor.Cyan)); }
     catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
-    try { Card.Of(999, new("pencil", "rainbow")); }
+    try { Card.Of(new Value("999", 999), new Suit("pencil", ConsoleColor.White)); }
     catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
     
-    var deck = Card.FullDeck();
-    Console.WriteLine(deck.Count);
+    //var deck = Card.FullDeck();
+    //Console.WriteLine(deck.Count);
 }
