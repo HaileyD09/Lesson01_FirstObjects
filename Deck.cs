@@ -19,9 +19,4 @@ public record Deck(List<Card> Cards)
         var secondDeck = Cards.GetRange(Cards.Count / 2, Cards.Count - Cards.Count / 2);
         return (new Deck(firstDeck), new Deck(secondDeck));
     }
-
-    public Deck Cut()
-    {
-        
-    }
 }
